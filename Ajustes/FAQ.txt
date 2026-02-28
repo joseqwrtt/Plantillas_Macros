@@ -1,0 +1,157 @@
+Perfecto, aquí tienes un **FAQ completo y organizado** que explica todo el flujo desde `CopiarPlantillasWord_ODT_2.0.py` hasta el editor de plantillas:
+
+---
+
+## **FAQ – Flujo de Plantillas y Editor**
+
+### **1. ¿Cuál es el propósito de todo este sistema?**
+
+El sistema sirve para **crear nuevas plantillas** (DOCX a partir de HTML) y copiarlas al portapapeles si se desea, usando una interfaz gráfica (`CopiarPlantillasWord_ODT_2.0.py`) y un editor HTML offline (`editor.html`) que genera `.docx` automáticamente en la carpeta `Plantillas`.
+
+---
+
+### **2. ¿Dónde están las carpetas importantes?**
+
+* `Plantillas`: Carpeta donde se guardan los `.docx` generados.
+* `Editor/Plantillas`: Carpeta dentro del editor, **no se usa** para guardar plantillas finales.
+* `Editor/ajustes/temp`: Carpeta temporal usada para almacenar HTML mientras se edita.
+* `Editor/ajustes/log.txt`: Archivo que registra **todo el flujo y errores** en tiempo real.
+* `Ajustes`: Configuración general (`config.json`, `primer_uso.json`) de `CopiarPlantillasWord_ODT_2.0.py`.
+
+---
+
+### **3. ¿Cómo se abre el editor de plantillas?**
+
+1. Desde `CopiarPlantillasWord_ODT_2.0.py`:
+
+   * Hay un **desplegable de ajustes**.
+   * Dentro hay la opción **“Iniciar editor”**.
+   * Al seleccionarla, se ejecuta `lanzar_editor.vbs`, que abre `app.py` (el servidor Flask que carga `editor.html`).
+2. Alternativamente, puedes abrir `Editor/lanzar_editor.vbs` directamente.
+
+---
+
+### **4. ¿Cómo funciona el editor?**
+
+* Se abre un navegador con TinyMCE (editor WYSIWYG offline).
+* Puedes escribir contenido HTML y formatearlo con listas, enlaces, imágenes, tablas, etc.
+* **Botones principales**:
+
+  * 💾 **Guardar contenido** → genera un `.docx` en `Plantillas`.
+  * ❌ **Cerrar editor** → cierra el servidor Flask.
+
+---
+
+### **5. ¿Qué sucede al guardar?**
+
+1. Se toma el contenido HTML del editor.
+2. Se guarda temporalmente en `Editor/ajustes/temp/content_temp.html`.
+3. Se genera un `.docx` con el mismo contenido:
+
+   * Por defecto se guarda en la carpeta superior `Plantillas`.
+   * Antes añadía la fecha al nombre, ahora puedes configurar para que no lo haga.
+4. Se registra la acción en `log.txt` **en tiempo real**, incluyendo errores si ocurren.
+
+---
+
+### **6. ¿Se pueden seguir usando otras funciones de CopiarPlantillasWord_ODT_2.0.py mientras el editor está abierto?**
+
+Sí, siempre que el editor se abra como **proceso independiente** mediante el `.vbs`.
+
+* **Si cierras el editor**, `CopiarPlantillasWord_ODT_2.0.py` sigue funcionando normalmente.
+* **Si cierras CopiarPlantillasWord_ODT_2.0.py**, el editor sigue abierto y funcional.
+
+---
+
+### **7. ¿Se pueden editar plantillas existentes?**
+
+* Actualmente, **no**. El editor solo sirve para crear nuevas plantillas.
+* El contenido ya existente en `Plantillas` no se carga automáticamente.
+* Se puede agregar esa funcionalidad más adelante si se desea.
+
+---
+
+### **8. ¿Cómo se manejan los errores?**
+
+* Todos los errores de guardado, generación de DOCX o problemas de HTML se registran **en tiempo real** en `Editor/ajustes/log.txt`.
+* En la interfaz web del editor, si ocurre un error, se muestra “Error al guardar” y se puede consultar el log para más detalle.
+
+---
+
+### **9. ¿Qué dependencias se necesitan?**
+
+* Python 3.13 o superior.
+* Librerías:
+
+  * `Flask` → servidor web para el editor.
+  * `python-docx` → creación de archivos DOCX.
+  * `pypandoc` → conversión de HTML a DOCX si se usa.
+  * `requests` o `axios` en frontend → para enviar contenido al servidor.
+* La primera vez se ejecuta `instalar_dependencias.py` para instalar automáticamente lo que falte.
+
+---
+
+### **10. ¿Dónde se guardan las configuraciones y logs de CopiarPlantillasWord_ODT_2.0.py?**
+
+* Configuración: `Ajustes/config.json`
+* Logs de depuración del editor (si debug está activado): `Editor/ajustes/log.txt`
+* Temp HTML del editor: `Editor/ajustes/temp/content_temp.html`
+
+---
+
+### **11. Resumen del flujo de creación de plantilla**
+
+1. Abrir `CopiarPlantillasWord_ODT_2.0.py`.
+2. Ir a **Ajustes → Iniciar editor**.
+3. Escribir la plantilla en el editor (TinyMCE).
+4. Pulsar **Guardar contenido** → `.docx` generado en `Plantillas` y log actualizado.
+5. Cerrar editor cuando se termine.
+----
+
+
+
+┌─────────────────────────────┐
+│  CopiarPlantillasWord_ODT_2.0  │  ← GUI principal (Tkinter)
+│  - Lista plantillas          │
+│  - Botón: "Iniciar editor"  │
+└───────────────┬─────────────┘
+                │ (Ejecuta)
+                ▼
+       ┌───────────────────────┐
+       │  lanzar_editor.vbs     │  ← Lanza servidor Flask
+       │  - Abre app.py         │
+       │  - Inicializa log.txt  │
+       └─────────────┬─────────┘
+                     │ Sirve
+                     ▼
+       ┌────────────────────────┐
+       │  editor.html            │  ← Interfaz web con TinyMCE
+       │  - Editor WYSIWYG       │
+       │  - Escribir contenido   │
+       │  - Formateo de texto    │
+       └─────────────┬─────────┘
+                     │ Botón "Guardar"
+                     ▼
+       ┌─────────────────────────────┐
+       │  app.py procesa contenido    │
+       │  - Convierte HTML → DOCX     │
+       │  - Guarda archivo en Plantillas │
+       │  - Registro en log.txt       │
+       └─────────────┬─────────────┘
+                     │
+                     ▼
+        ┌──────────────────────────┐
+        │  Plantillas/             │
+        │  - Archivos .docx        │
+        │  - Listos para usar      │
+        └──────────────────────────┘
+
+
+Comportamiento clave
+
+Al abrir el editor desde el botón, se ejecuta como proceso independiente: puedes seguir usando CopiarPlantillasWord_ODT_2.0.py.
+
+Todos los cambios en el editor se guardan directamente en Plantillas/, sin modificar plantillas existentes a menos que lo sobrescribas.
+
+El log (log.txt) se actualiza en tiempo real, útil para depuración o si el proceso se interrumpe.
+
