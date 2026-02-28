@@ -1,0 +1,751 @@
+[2025-10-10 20:56:03] === Servidor Flask iniciado ===
+[2025-10-10 20:56:05] === Servidor Flask iniciado ===
+[2025-10-10 21:03:22] === Iniciando instalación de dependencias ===
+[2025-10-10 21:03:25] Instalado correctamente: flask
+[2025-10-10 21:03:29] Instalado correctamente: pypandoc
+[2025-10-10 21:03:32] Instalado correctamente: python-docx
+[2025-10-10 21:03:32] === Dependencias instaladas correctamente ===
+[2025-10-10 21:03:34] === Servidor Flask iniciado ===
+[2025-10-10 21:03:35] === Servidor Flask iniciado ===
+[2025-10-12 09:50:40] === Iniciando instalación de dependencias ===
+[2025-10-12 09:50:46] Instalado correctamente: flask
+[2025-10-12 09:50:48] Instalado correctamente: pypandoc
+[2025-10-12 09:50:51] Instalado correctamente: python-docx
+[2025-10-12 09:50:51] === Dependencias instaladas correctamente ===
+[2025-10-12 09:50:53] === Servidor Flask iniciado ===
+[2025-10-12 09:50:54] === Servidor Flask iniciado ===
+[2025-10-12 09:50:58] Página principal cargada (editor.html)
+[2025-10-12 09:51:06] Petición /guardar recibida
+[2025-10-12 09:51:06] Datos recibidos → Título: 6666, Tamaño HTML: 12 caracteres
+[2025-10-12 09:51:06] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 09:51:06] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 09:51:06] ❌ ERROR durante conversión: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+Traceback (most recent call last):
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\generar_docx.py", line 17, in generar_docx_func
+    pypandoc.convert_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        html,
+        ^^^^^
+    ...<3 lines>...
+        extra_args=['--standalone']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 94, in convert_text
+    return _convert_input(source, format, 'string', to, extra_args=extra_args,
+                          outputfile=outputfile, filters=filters,
+                          verify_format=verify_format, sandbox=sandbox,
+                          cworkdir=cworkdir)
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 367, in _convert_input
+    _ensure_pandoc_path()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 802, in _ensure_pandoc_path
+    raise OSError("No pandoc was found: either install pandoc and add it\n"
+                  "to your PATH or or call pypandoc.download_pandoc(...) or\n"
+                  "install pypandoc wheels with included pandoc.")
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+
+[2025-10-12 09:51:06] ❌ ERROR en /guardar: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+Traceback (most recent call last):
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\app.py", line 59, in guardar
+    generar_docx_func(html_path, docx_path)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\generar_docx.py", line 17, in generar_docx_func
+    pypandoc.convert_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        html,
+        ^^^^^
+    ...<3 lines>...
+        extra_args=['--standalone']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 94, in convert_text
+    return _convert_input(source, format, 'string', to, extra_args=extra_args,
+                          outputfile=outputfile, filters=filters,
+                          verify_format=verify_format, sandbox=sandbox,
+                          cworkdir=cworkdir)
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 367, in _convert_input
+    _ensure_pandoc_path()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 802, in _ensure_pandoc_path
+    raise OSError("No pandoc was found: either install pandoc and add it\n"
+                  "to your PATH or or call pypandoc.download_pandoc(...) or\n"
+                  "install pypandoc wheels with included pandoc.")
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+
+[2025-10-12 09:51:14] Petición /guardar recibida
+[2025-10-12 09:51:14] Datos recibidos → Título: 6666, Tamaño HTML: 12 caracteres
+[2025-10-12 09:51:14] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 09:51:14] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 09:51:14] ❌ ERROR durante conversión: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+Traceback (most recent call last):
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\generar_docx.py", line 17, in generar_docx_func
+    pypandoc.convert_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        html,
+        ^^^^^
+    ...<3 lines>...
+        extra_args=['--standalone']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 94, in convert_text
+    return _convert_input(source, format, 'string', to, extra_args=extra_args,
+                          outputfile=outputfile, filters=filters,
+                          verify_format=verify_format, sandbox=sandbox,
+                          cworkdir=cworkdir)
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 367, in _convert_input
+    _ensure_pandoc_path()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 802, in _ensure_pandoc_path
+    raise OSError("No pandoc was found: either install pandoc and add it\n"
+                  "to your PATH or or call pypandoc.download_pandoc(...) or\n"
+                  "install pypandoc wheels with included pandoc.")
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+
+[2025-10-12 09:51:14] ❌ ERROR en /guardar: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+Traceback (most recent call last):
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\app.py", line 59, in guardar
+    generar_docx_func(html_path, docx_path)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\generar_docx.py", line 17, in generar_docx_func
+    pypandoc.convert_text(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        html,
+        ^^^^^
+    ...<3 lines>...
+        extra_args=['--standalone']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 94, in convert_text
+    return _convert_input(source, format, 'string', to, extra_args=extra_args,
+                          outputfile=outputfile, filters=filters,
+                          verify_format=verify_format, sandbox=sandbox,
+                          cworkdir=cworkdir)
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 367, in _convert_input
+    _ensure_pandoc_path()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ujfmaa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pypandoc\__init__.py", line 802, in _ensure_pandoc_path
+    raise OSError("No pandoc was found: either install pandoc and add it\n"
+                  "to your PATH or or call pypandoc.download_pandoc(...) or\n"
+                  "install pypandoc wheels with included pandoc.")
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+
+[2025-10-12 09:54:16] Solicitud de cierre recibida (/cerrar)
+[2025-10-12 09:59:17] === Iniciando instalación de dependencias ===
+[2025-10-12 09:59:24] Instalado correctamente: flask
+[2025-10-12 09:59:29] Instalado correctamente: pypandoc
+[2025-10-12 09:59:31] Instalado correctamente: python-docx
+[2025-10-12 09:59:31] === Dependencias instaladas correctamente ===
+[2025-10-12 10:01:10] === Iniciando instalación de dependencias ===
+[2025-10-12 10:01:14] Instalado correctamente: flask
+[2025-10-12 10:01:18] Instalado correctamente: pypandoc
+[2025-10-12 10:01:21] Instalado correctamente: python-docx
+[2025-10-12 10:01:21] === Dependencias instaladas correctamente ===
+[2025-10-12 10:12:52] === Iniciando instalación de dependencias ===
+[2025-10-12 10:12:55] Instalado correctamente: flask
+[2025-10-12 10:12:58] Instalado correctamente: pypandoc
+[2025-10-12 10:13:01] Instalado correctamente: python-docx
+[2025-10-12 10:13:01] === Dependencias instaladas correctamente ===
+[2025-10-12 10:13:40] === Servidor Flask iniciado ===
+[2025-10-12 10:13:41] === Servidor Flask iniciado ===
+[2025-10-12 10:13:52] Página principal cargada (editor.html)
+[2025-10-12 10:14:04] Petición /guardar recibida
+[2025-10-12 10:14:04] Datos recibidos → Título: gg, Tamaño HTML: 9 caracteres
+[2025-10-12 10:14:04] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:14:04] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:14:04] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\gg.docx
+[2025-10-12 10:14:04] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\gg.docx
+[2025-10-12 10:18:48] Petición /guardar recibida
+[2025-10-12 10:18:48] Datos recibidos → Título: aaagg656, Tamaño HTML: 9 caracteres
+[2025-10-12 10:18:48] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:18:48] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:18:48] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaagg656.docx
+[2025-10-12 10:18:48] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaagg656.docx
+[2025-10-12 10:19:40] Solicitud de cierre recibida (/cerrar)
+[2025-10-12 10:19:42] Solicitud de cierre recibida (/cerrar)
+[2025-10-12 10:20:47] === Iniciando instalación de dependencias ===
+[2025-10-12 10:20:49] Instalado correctamente: flask
+[2025-10-12 10:20:51] Instalado correctamente: pypandoc
+[2025-10-12 10:20:52] Instalado correctamente: python-docx
+[2025-10-12 10:20:53] === Dependencias instaladas correctamente ===
+[2025-10-12 10:22:01] === Servidor Flask iniciado ===
+[2025-10-12 10:22:02] === Servidor Flask iniciado ===
+[2025-10-12 10:22:02] Página principal cargada (editor.html)
+[2025-10-12 10:22:03] Página principal cargada (editor.html)
+[2025-10-12 10:22:20] Página principal cargada (editor.html)
+[2025-10-12 10:23:45] === Iniciando instalación de dependencias ===
+[2025-10-12 10:23:47] Instalado correctamente: flask
+[2025-10-12 10:23:49] Instalado correctamente: pypandoc
+[2025-10-12 10:23:51] Instalado correctamente: python-docx
+[2025-10-12 10:23:51] === Dependencias instaladas correctamente ===
+[2025-10-12 10:23:53] === Servidor Flask iniciado ===
+[2025-10-12 10:23:53] === Servidor Flask iniciado ===
+[2025-10-12 10:23:54] Página principal cargada (editor.html)
+[2025-10-12 10:23:55] Página principal cargada (editor.html)
+[2025-10-12 10:26:19] === Iniciando instalación de dependencias ===
+[2025-10-12 10:26:21] Instalado correctamente: flask
+[2025-10-12 10:26:23] Instalado correctamente: pypandoc
+[2025-10-12 10:26:25] Instalado correctamente: python-docx
+[2025-10-12 10:26:25] === Dependencias instaladas correctamente ===
+[2025-10-12 10:28:20] === Iniciando instalación de dependencias ===
+[2025-10-12 10:28:22] Instalado correctamente: flask
+[2025-10-12 10:28:24] Instalado correctamente: pypandoc
+[2025-10-12 10:28:26] Instalado correctamente: python-docx
+[2025-10-12 10:28:26] === Dependencias instaladas correctamente ===
+[2025-10-12 10:28:27] === Servidor Flask iniciado ===
+[2025-10-12 10:28:28] === Servidor Flask iniciado ===
+[2025-10-12 10:28:28] Página principal cargada (editor.html)
+[2025-10-12 10:28:30] Página principal cargada (editor.html)
+[2025-10-12 10:28:30] Página principal cargada (editor.html)
+[2025-10-12 10:28:36] Petición /guardar recibida
+[2025-10-12 10:28:36] Datos recibidos → Título: HOLA, Tamaño HTML: 13 caracteres
+[2025-10-12 10:28:36] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:28:36] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 10:28:36] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\HOLA.docx
+[2025-10-12 10:28:36] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\HOLA.docx
+[2025-10-12 11:14:47] === Iniciando instalación de dependencias ===
+[2025-10-12 11:14:50] Instalado correctamente: flask
+[2025-10-12 11:14:52] Instalado correctamente: pypandoc
+[2025-10-12 11:14:53] Instalado correctamente: python-docx
+[2025-10-12 11:14:53] === Dependencias instaladas correctamente ===
+[2025-10-12 11:14:55] === Servidor Flask iniciado ===
+[2025-10-12 11:14:56] === Servidor Flask iniciado ===
+[2025-10-12 11:14:56] Página principal cargada (editor.html)
+[2025-10-12 11:14:58] Página principal cargada (editor.html)
+[2025-10-12 11:15:07] Página principal cargada (editor.html)
+[2025-10-12 11:15:08] Página principal cargada (editor.html)
+[2025-10-12 11:15:08] === Servidor Flask iniciado ===
+[2025-10-12 11:15:09] === Servidor Flask iniciado ===
+[2025-10-12 11:15:37] Página principal cargada (editor.html)
+[2025-10-12 11:15:37] === Servidor Flask iniciado ===
+[2025-10-12 11:15:38] === Servidor Flask iniciado ===
+[2025-10-12 11:15:41] Página principal cargada (editor.html)
+[2025-10-12 11:15:51] Solicitud de cierre recibida (/cerrar)
+[2025-10-12 11:25:13] Página principal cargada (editor.html)
+[2025-10-12 11:25:15] === Servidor Flask iniciado ===
+[2025-10-12 11:25:16] Página principal cargada (editor.html)
+[2025-10-12 11:25:16] === Servidor Flask iniciado ===
+[2025-10-12 11:25:21] Petición /guardar recibida
+[2025-10-12 11:25:21] Datos recibidos → Título: aaa4354, Tamaño HTML: 11 caracteres
+[2025-10-12 11:25:21] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:25:21] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:25:22] Petición /guardar recibida
+[2025-10-12 11:25:22] Datos recibidos → Título: aaa4354, Tamaño HTML: 11 caracteres
+[2025-10-12 11:25:22] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:25:22] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:25:22] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaa4354.docx
+[2025-10-12 11:25:22] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaa4354.docx
+[2025-10-12 11:25:23] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaa4354.docx
+[2025-10-12 11:25:23] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\Plantillas\aaa4354.docx
+[2025-10-12 11:25:34] Solicitud de cierre recibida (/cerrar)
+[2025-10-12 11:27:58] === Servidor Flask iniciado ===
+[2025-10-12 11:27:59] === Servidor Flask iniciado ===
+[2025-10-12 11:28:00] === Servidor Flask iniciado ===
+[2025-10-12 11:28:00] === Servidor Flask iniciado ===
+[2025-10-12 11:28:22] Página principal cargada (editor.html)
+[2025-10-12 11:28:23] === Servidor Flask iniciado ===
+[2025-10-12 11:28:24] === Servidor Flask iniciado ===
+[2025-10-12 11:28:28] Página principal cargada (editor.html)
+[2025-10-12 11:28:32] Petición /guardar recibida
+[2025-10-12 11:28:32] Datos recibidos → Título: aaa, Tamaño HTML: 9 caracteres
+[2025-10-12 11:28:32] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:28:32] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:28:33] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:28:33] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:29:14] Petición /guardar recibida
+[2025-10-12 11:29:14] Datos recibidos → Título: aaa, Tamaño HTML: 137223 caracteres
+[2025-10-12 11:29:14] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:29:14] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:29:15] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:29:15] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:29:46] Petición /guardar recibida
+[2025-10-12 11:29:46] Datos recibidos → Título: aaa, Tamaño HTML: 137240 caracteres
+[2025-10-12 11:29:46] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:29:46] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-12 11:29:46] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:29:46] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-12 11:31:18] Solicitud de cierre recibida (/cerrar)
+[2025-10-13 08:55:20] === Iniciando instalación de dependencias ===
+[2025-10-13 08:55:23] Instalado correctamente: flask
+[2025-10-13 08:55:26] Instalado correctamente: pypandoc
+[2025-10-13 08:55:28] Instalado correctamente: python-docx
+[2025-10-13 08:55:28] === Dependencias instaladas correctamente ===
+[2025-10-13 08:55:30] === Servidor Flask iniciado ===
+[2025-10-13 08:55:31] === Servidor Flask iniciado ===
+[2025-10-13 08:55:32] Página principal cargada (editor.html)
+[2025-10-13 08:55:34] Página principal cargada (editor.html)
+[2025-10-13 08:55:38] Petición /guardar recibida
+[2025-10-13 08:55:38] Datos recibidos → Título: aaaa, Tamaño HTML: 10 caracteres
+[2025-10-13 08:55:38] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-13 08:55:38] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-13 08:55:39] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaaa.docx
+[2025-10-13 08:55:39] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaaa.docx
+[2025-10-13 08:55:52] Solicitud de cierre recibida (/cerrar)
+[2025-10-13 08:57:41] Página principal cargada (editor.html)
+[2025-10-13 08:57:42] === Servidor Flask iniciado ===
+[2025-10-13 08:57:43] Página principal cargada (editor.html)
+[2025-10-13 08:57:43] === Servidor Flask iniciado ===
+[2025-10-13 08:59:25] Solicitud de cierre recibida (/cerrar)
+[2025-10-13 11:15:58] === Servidor Flask iniciado ===
+[2025-10-13 11:15:59] === Servidor Flask iniciado ===
+[2025-10-13 11:15:59] Página principal cargada (editor.html)
+[2025-10-13 11:16:00] Página principal cargada (editor.html)
+[2025-10-13 11:16:02] Solicitud de cierre recibida (/cerrar)
+[2025-10-13 14:31:37] === Servidor Flask iniciado ===
+[2025-10-13 14:31:38] === Servidor Flask iniciado ===
+[2025-10-13 14:31:39] Página principal cargada (editor.html)
+[2025-10-13 14:31:40] Página principal cargada (editor.html)
+[2025-10-13 14:32:06] Página principal cargada (editor.html)
+[2025-10-13 14:33:41] Solicitud de cierre recibida (/cerrar)
+[2025-10-14 17:09:05] === Iniciando instalación de dependencias ===
+[2025-10-14 17:09:08] Instalado correctamente: flask
+[2025-10-14 17:09:11] Instalado correctamente: pypandoc
+[2025-10-14 17:09:14] Instalado correctamente: python-docx
+[2025-10-14 17:09:14] === Dependencias instaladas correctamente ===
+[2025-10-14 17:09:16] === Servidor Flask iniciado ===
+[2025-10-14 17:09:18] === Servidor Flask iniciado ===
+[2025-10-14 17:09:21] Página principal cargada (editor.html)
+[2025-10-14 17:09:23] Página principal cargada (editor.html)
+[2025-10-14 17:09:27] Petición /guardar recibida
+[2025-10-14 17:09:27] Datos recibidos → Título: aaa, Tamaño HTML: 9 caracteres
+[2025-10-14 17:09:27] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-14 17:09:27] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-14 17:09:28] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-14 17:09:28] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaa.docx
+[2025-10-14 17:09:35] Solicitud de cierre recibida (/cerrar)
+[2025-10-14 17:14:50] === Servidor Flask iniciado ===
+[2025-10-14 17:14:50] === Servidor Flask iniciado ===
+[2025-10-14 17:14:50] Página principal cargada (editor.html)
+[2025-10-14 17:14:52] Página principal cargada (editor.html)
+[2025-10-14 17:14:52] Página principal cargada (editor.html)
+[2025-10-14 17:14:52] Página principal cargada (editor.html)
+[2025-10-14 17:15:01] Solicitud de cierre recibida (/cerrar)
+[2025-10-16 15:50:09] === Iniciando instalación de dependencias ===
+[2025-10-16 15:50:13] Instalado correctamente: flask
+[2025-10-16 15:50:16] Instalado correctamente: pypandoc
+[2025-10-16 15:50:21] Instalado correctamente: python-docx
+[2025-10-16 15:50:21] === Dependencias instaladas correctamente ===
+[2025-10-16 15:50:22] === Servidor Flask iniciado ===
+[2025-10-16 15:50:23] === Servidor Flask iniciado ===
+[2025-10-16 15:50:27] Página principal cargada (editor.html)
+[2025-10-16 15:50:28] Página principal cargada (editor.html)
+[2025-10-16 15:50:37] Petición /guardar recibida
+[2025-10-16 15:50:37] Datos recibidos → Título: 333, Tamaño HTML: 10 caracteres
+[2025-10-16 15:50:37] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-16 15:50:37] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-16 15:50:38] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\333.docx
+[2025-10-16 15:50:38] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\333.docx
+[2025-10-16 15:51:36] Petición /guardar recibida
+[2025-10-16 15:51:36] Datos recibidos → Título: Report PDO - AulaBB, Tamaño HTML: 466 caracteres
+[2025-10-16 15:51:36] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-16 15:51:36] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-16 15:51:37] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Report PDO - AulaBB.docx
+[2025-10-16 15:51:37] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Report PDO - AulaBB.docx
+[2025-10-16 15:51:52] Solicitud de cierre recibida (/cerrar)
+[2025-10-17 09:37:13] === Iniciando instalación de dependencias ===
+[2025-10-17 09:37:17] Instalado correctamente: flask
+[2025-10-17 09:37:20] Instalado correctamente: pypandoc
+[2025-10-17 09:37:24] Instalado correctamente: python-docx
+[2025-10-17 09:37:24] === Dependencias instaladas correctamente ===
+[2025-10-17 09:37:25] === Servidor Flask iniciado ===
+[2025-10-17 09:37:26] === Servidor Flask iniciado ===
+[2025-10-17 09:37:28] Página principal cargada (editor.html)
+[2025-10-17 09:37:30] Página principal cargada (editor.html)
+[2025-10-17 09:41:41] Petición /guardar recibida
+[2025-10-17 09:41:41] Datos recibidos → Título: zz_Grupos_ULTRA_01, Tamaño HTML: 1421 caracteres
+[2025-10-17 09:41:41] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-17 09:41:41] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-17 09:41:41] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\zz_Grupos_ULTRA_01.docx
+[2025-10-17 09:41:41] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\zz_Grupos_ULTRA_01.docx
+[2025-10-20 13:09:40] === Iniciando instalación de dependencias ===
+[2025-10-20 13:09:45] Instalado correctamente: flask
+[2025-10-20 13:09:49] Instalado correctamente: pypandoc
+[2025-10-20 13:09:52] Instalado correctamente: python-docx
+[2025-10-20 13:09:52] === Dependencias instaladas correctamente ===
+[2025-10-20 13:09:54] === Servidor Flask iniciado ===
+[2025-10-20 13:09:55] === Servidor Flask iniciado ===
+[2025-10-20 13:09:57] Página principal cargada (editor.html)
+[2025-10-20 13:09:59] Página principal cargada (editor.html)
+[2025-10-20 13:10:37] Petición /guardar recibida
+[2025-10-20 13:10:37] Datos recibidos → Título: IA - Restablecido, Tamaño HTML: 400 caracteres
+[2025-10-20 13:10:37] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-20 13:10:37] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-20 13:10:38] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\IA - Restablecido.docx
+[2025-10-20 13:10:38] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\IA - Restablecido.docx
+[2025-10-20 13:10:43] Petición /guardar recibida
+[2025-10-20 13:10:43] Datos recibidos → Título: IA - Restablecido, Tamaño HTML: 412 caracteres
+[2025-10-20 13:10:43] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-20 13:10:43] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-10-20 13:10:43] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\IA - Restablecido.docx
+[2025-10-20 13:10:43] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\IA - Restablecido.docx
+[2025-10-20 13:10:49] Solicitud de cierre recibida (/cerrar)
+[2025-11-20 14:20:03] === Iniciando instalación de dependencias ===
+[2025-11-20 14:20:08] Instalado correctamente: flask
+[2025-11-20 14:20:13] Instalado correctamente: pypandoc
+[2025-11-20 14:20:18] Instalado correctamente: python-docx
+[2025-11-20 14:20:18] === Dependencias instaladas correctamente ===
+[2025-11-20 14:20:19] === Servidor Flask iniciado ===
+[2025-11-20 14:20:21] === Servidor Flask iniciado ===
+[2025-11-20 14:20:24] Página principal cargada (editor.html)
+[2025-11-20 14:20:25] Página principal cargada (editor.html)
+[2025-11-20 14:22:11] Petición /guardar recibida
+[2025-11-20 14:22:11] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110709 caracteres
+[2025-11-20 14:22:11] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:11] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:13] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:22:34] Petición /guardar recibida
+[2025-11-20 14:22:34] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110633 caracteres
+[2025-11-20 14:22:34] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:34] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:34] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:22:34] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:22:49] Petición /guardar recibida
+[2025-11-20 14:22:49] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110714 caracteres
+[2025-11-20 14:22:49] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:49] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:22:50] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:22:50] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:23:05] Petición /guardar recibida
+[2025-11-20 14:23:05] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110714 caracteres
+[2025-11-20 14:23:05] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:23:05] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:23:06] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:23:06] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:23:36] Petición /guardar recibida
+[2025-11-20 14:23:36] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110558 caracteres
+[2025-11-20 14:23:36] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:23:36] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:23:36] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:23:36] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:24:04] Petición /guardar recibida
+[2025-11-20 14:24:04] Datos recibidos → Título: O_Collab 2 - Repositorio, Tamaño HTML: 110407 caracteres
+[2025-11-20 14:24:04] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:24:04] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:24:04] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:24:04] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Collab 2 - Repositorio.docx
+[2025-11-20 14:31:36] Petición /guardar recibida
+[2025-11-20 14:31:36] Datos recibidos → Título: O_Videos_KalturaMedia, Tamaño HTML: 633294 caracteres
+[2025-11-20 14:31:36] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:31:36] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:31:37] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Videos_KalturaMedia.docx
+[2025-11-20 14:31:37] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Videos_KalturaMedia.docx
+[2025-11-20 14:51:44] Petición /guardar recibida
+[2025-11-20 14:51:44] Datos recibidos → Título: O_Videos_KalturaMedia, Tamaño HTML: 633294 caracteres
+[2025-11-20 14:51:44] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:51:44] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:51:46] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Videos_KalturaMedia.docx
+[2025-11-20 14:51:46] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Videos_KalturaMedia.docx
+[2025-11-20 14:56:21] Petición /guardar recibida
+[2025-11-20 14:56:21] Datos recibidos → Título: O_Forzar_Envio, Tamaño HTML: 281564 caracteres
+[2025-11-20 14:56:21] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:56:21] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-20 14:56:21] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Forzar_Envio.docx
+[2025-11-20 14:56:21] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\O_Forzar_Envio.docx
+[2025-11-27 10:34:03] === Iniciando instalación de dependencias ===
+[2025-11-27 10:34:09] Instalado correctamente: flask
+[2025-11-27 10:34:13] Instalado correctamente: pypandoc
+[2025-11-27 10:34:16] Instalado correctamente: python-docx
+[2025-11-27 10:34:16] === Dependencias instaladas correctamente ===
+[2025-11-27 10:34:19] === Servidor Flask iniciado ===
+[2025-11-27 10:34:20] === Servidor Flask iniciado ===
+[2025-11-27 10:34:23] Página principal cargada (editor.html)
+[2025-11-27 10:34:24] Página principal cargada (editor.html)
+[2025-11-27 10:36:04] Petición /guardar recibida
+[2025-11-27 10:36:04] Datos recibidos → Título: Aulas - desactivadas (sobran), Tamaño HTML: 80509 caracteres
+[2025-11-27 10:36:04] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-27 10:36:04] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-27 10:36:06] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Aulas - desactivadas (sobran).docx
+[2025-11-27 10:36:06] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Aulas - desactivadas (sobran).docx
+[2025-11-27 10:37:05] Petición /guardar recibida
+[2025-11-27 10:37:05] Datos recibidos → Título: Aulas - desac (sobran), Tamaño HTML: 80368 caracteres
+[2025-11-27 10:37:05] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-27 10:37:05] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-11-27 10:37:05] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Aulas - desac (sobran).docx
+[2025-11-27 10:37:05] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Aulas - desac (sobran).docx
+[2025-11-27 10:38:16] Solicitud de cierre recibida (/cerrar)
+[2025-12-10 11:43:54] === Iniciando instalación de dependencias ===
+[2025-12-10 11:43:57] Instalado correctamente: flask
+[2025-12-10 11:44:00] Instalado correctamente: pypandoc
+[2025-12-10 11:44:03] Instalado correctamente: python-docx
+[2025-12-10 11:44:03] === Dependencias instaladas correctamente ===
+[2025-12-10 11:44:06] === Servidor Flask iniciado ===
+[2025-12-10 11:44:10] === Servidor Flask iniciado ===
+[2025-12-10 11:44:15] Página principal cargada (editor.html)
+[2025-12-10 11:44:16] Página principal cargada (editor.html)
+[2025-12-10 11:47:44] Solicitud de cierre recibida (/cerrar)
+[2025-12-18 15:56:49] === Iniciando instalación de dependencias ===
+[2025-12-18 15:56:53] Instalado correctamente: flask
+[2025-12-18 15:56:55] Instalado correctamente: pypandoc
+[2025-12-18 15:56:58] Instalado correctamente: python-docx
+[2025-12-18 15:56:58] === Dependencias instaladas correctamente ===
+[2025-12-18 15:57:00] === Servidor Flask iniciado ===
+[2025-12-18 15:57:01] === Servidor Flask iniciado ===
+[2025-12-18 15:57:07] Página principal cargada (editor.html)
+[2025-12-18 15:57:08] Página principal cargada (editor.html)
+[2025-12-18 15:57:26] Solicitud de cierre recibida (/cerrar)
+[2025-12-30 09:34:44] === Iniciando instalación de dependencias ===
+[2025-12-30 09:34:47] Instalado correctamente: flask
+[2025-12-30 09:34:50] Instalado correctamente: pypandoc
+[2025-12-30 09:34:52] Instalado correctamente: python-docx
+[2025-12-30 09:34:52] === Dependencias instaladas correctamente ===
+[2025-12-30 09:34:54] === Servidor Flask iniciado ===
+[2025-12-30 09:34:54] === Servidor Flask iniciado ===
+[2025-12-30 09:34:57] Página principal cargada (editor.html)
+[2025-12-30 09:34:57] Página principal cargada (editor.html)
+[2025-12-30 09:44:17] Petición /guardar recibida
+[2025-12-30 09:44:17] Datos recibidos → Título: Office - Phishing, Tamaño HTML: 2141 caracteres
+[2025-12-30 09:44:17] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-12-30 09:44:17] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-12-30 09:44:18] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Office - Phishing.docx
+[2025-12-30 09:44:18] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Office - Phishing.docx
+[2025-12-30 09:48:41] Solicitud de cierre recibida (/cerrar)
+[2025-12-30 11:17:08] Página principal cargada (editor.html)
+[2025-12-30 11:17:09] Página principal cargada (editor.html)
+[2025-12-30 11:18:58] Petición /guardar recibida
+[2025-12-30 11:18:58] Datos recibidos → Título: Office - Phishing, Tamaño HTML: 2172 caracteres
+[2025-12-30 11:18:58] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-12-30 11:18:58] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2025-12-30 11:18:59] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Office - Phishing.docx
+[2025-12-30 11:18:59] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Office - Phishing.docx
+[2025-12-30 11:19:07] Solicitud de cierre recibida (/cerrar)
+[2025-12-31 12:50:59] === Iniciando instalación de dependencias ===
+[2025-12-31 12:51:03] Instalado correctamente: flask
+[2025-12-31 12:51:06] Instalado correctamente: pypandoc
+[2025-12-31 12:51:09] Instalado correctamente: python-docx
+[2025-12-31 12:51:09] === Dependencias instaladas correctamente ===
+[2025-12-31 12:51:11] === Servidor Flask iniciado ===
+[2025-12-31 12:51:12] === Servidor Flask iniciado ===
+[2025-12-31 12:51:15] Página principal cargada (editor.html)
+[2025-12-31 12:51:18] Página principal cargada (editor.html)
+[2025-12-31 14:10:33] Página principal cargada (editor.html)
+[2025-12-31 14:10:33] Página principal cargada (editor.html)
+[2026-01-05 11:41:11] === Iniciando instalación de dependencias ===
+[2026-01-05 11:41:16] Instalado correctamente: flask
+[2026-01-05 11:41:19] Instalado correctamente: pypandoc
+[2026-01-05 11:41:23] Instalado correctamente: python-docx
+[2026-01-05 11:41:23] === Dependencias instaladas correctamente ===
+[2026-01-05 11:41:25] === Servidor Flask iniciado ===
+[2026-01-05 11:41:27] === Servidor Flask iniciado ===
+[2026-01-05 11:41:32] Página principal cargada (editor.html)
+[2026-01-05 11:41:33] Página principal cargada (editor.html)
+[2026-01-05 11:44:28] Petición /guardar recibida
+[2026-01-05 11:44:28] Datos recibidos → Título: Campus - BB, Tamaño HTML: 124351 caracteres
+[2026-01-05 11:44:28] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:44:28] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:44:30] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Campus - BB.docx
+[2026-01-05 11:44:30] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Campus - BB.docx
+[2026-01-05 11:44:32] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 11:45:21] Página principal cargada (editor.html)
+[2026-01-05 11:45:22] Página principal cargada (editor.html)
+[2026-01-05 11:47:08] Petición /guardar recibida
+[2026-01-05 11:47:08] Datos recibidos → Título: Ag, Tamaño HTML: 166506 caracteres
+[2026-01-05 11:47:08] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:47:08] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:47:09] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:47:09] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:50:43] Petición /guardar recibida
+[2026-01-05 11:50:43] Datos recibidos → Título: Ag, Tamaño HTML: 166520 caracteres
+[2026-01-05 11:50:43] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:50:43] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:50:43] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:50:43] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:50:45] Petición /guardar recibida
+[2026-01-05 11:50:45] Datos recibidos → Título: Ag, Tamaño HTML: 166520 caracteres
+[2026-01-05 11:50:45] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:50:45] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 11:50:46] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:50:46] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Ag.docx
+[2026-01-05 11:52:03] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 12:01:01] Página principal cargada (editor.html)
+[2026-01-05 12:01:02] Página principal cargada (editor.html)
+[2026-01-05 12:02:17] Petición /guardar recibida
+[2026-01-05 12:02:17] Datos recibidos → Título: AA - Pruebas, Tamaño HTML: 673366 caracteres
+[2026-01-05 12:02:17] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:02:17] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:02:19] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:02:19] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:03:11] Petición /guardar recibida
+[2026-01-05 12:03:11] Datos recibidos → Título: AA - Pruebas, Tamaño HTML: 95526 caracteres
+[2026-01-05 12:03:11] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:03:11] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:03:12] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:03:12] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:07:45] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 12:08:00] Página principal cargada (editor.html)
+[2026-01-05 12:08:00] Página principal cargada (editor.html)
+[2026-01-05 12:08:18] Petición /guardar recibida
+[2026-01-05 12:08:18] Datos recibidos → Título: AA - Pruebas, Tamaño HTML: 95518 caracteres
+[2026-01-05 12:08:18] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:08:18] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:08:19] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:08:19] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA - Pruebas.docx
+[2026-01-05 12:29:19] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 12:29:51] === Servidor Flask iniciado ===
+[2026-01-05 12:30:04] Página principal cargada (editor.html)
+[2026-01-05 12:30:04] Página principal cargada (editor.html)
+[2026-01-05 12:31:03] Petición /guardar recibida
+[2026-01-05 12:31:03] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:31:04] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA-Pruebas 2.docx
+[2026-01-05 12:31:04] DOCX generado con tamaños fijados: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\AA-Pruebas 2.docx
+[2026-01-05 12:31:26] === Servidor Flask iniciado ===
+[2026-01-05 12:31:34] === Servidor Flask iniciado ===
+[2026-01-05 12:31:39] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 12:33:42] Página principal cargada (editor.html)
+[2026-01-05 12:33:43] Página principal cargada (editor.html)
+[2026-01-05 12:33:52] === Servidor Flask iniciado ===
+[2026-01-05 12:34:26] Petición /guardar recibida
+[2026-01-05 12:34:26] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-05 12:34:27] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaaa.docx
+[2026-01-05 12:34:27] DOCX generado con tamaños fijados: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\aaaa.docx
+[2026-01-05 12:35:59] Solicitud de cierre recibida (/cerrar)
+[2026-01-05 12:36:38] === Servidor Flask iniciado ===
+[2026-01-26 09:09:40] === Iniciando instalación de dependencias ===
+[2026-01-26 09:09:47] Instalado correctamente: flask
+[2026-01-26 09:09:53] Instalado correctamente: pypandoc
+[2026-01-26 09:09:58] Instalado correctamente: python-docx
+[2026-01-26 09:09:58] === Dependencias instaladas correctamente ===
+[2026-01-26 09:10:00] === Servidor Flask iniciado ===
+[2026-01-26 09:10:01] === Servidor Flask iniciado ===
+[2026-01-26 09:10:06] Página principal cargada (editor.html)
+[2026-01-26 09:10:07] Página principal cargada (editor.html)
+[2026-01-26 09:10:49] Petición /guardar recibida
+[2026-01-26 09:10:49] Datos recibidos → Título: Campus - BB, Tamaño HTML: 124385 caracteres
+[2026-01-26 09:10:49] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-26 09:10:49] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-01-26 09:10:51] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Campus - BB.docx
+[2026-01-26 09:10:51] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Campus - BB.docx
+[2026-01-26 09:11:13] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 10:05:26] === Iniciando instalación de dependencias ===
+[2026-02-06 10:05:31] Instalado correctamente: flask
+[2026-02-06 10:05:35] Instalado correctamente: pypandoc
+[2026-02-06 10:05:40] Instalado correctamente: python-docx
+[2026-02-06 10:05:40] === Dependencias instaladas correctamente ===
+[2026-02-06 10:05:41] === Servidor Flask iniciado ===
+[2026-02-06 10:05:42] === Servidor Flask iniciado ===
+[2026-02-06 10:05:46] Página principal cargada (editor.html)
+[2026-02-06 10:05:47] Página principal cargada (editor.html)
+[2026-02-06 10:08:57] Petición /guardar recibida
+[2026-02-06 10:08:57] Datos recibidos → Título: Chat con N2, Tamaño HTML: 967 caracteres
+[2026-02-06 10:08:57] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:08:57] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:08:59] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:08:59] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:09:32] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 10:09:49] Página principal cargada (editor.html)
+[2026-02-06 10:09:50] Página principal cargada (editor.html)
+[2026-02-06 10:10:24] Petición /guardar recibida
+[2026-02-06 10:10:24] Datos recibidos → Título: Chat con N2, Tamaño HTML: 881 caracteres
+[2026-02-06 10:10:24] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:10:24] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:10:25] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:10:25] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:10:28] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 10:10:46] Página principal cargada (editor.html)
+[2026-02-06 10:10:46] Página principal cargada (editor.html)
+[2026-02-06 10:11:02] Petición /guardar recibida
+[2026-02-06 10:11:02] Datos recibidos → Título: Chat con N2, Tamaño HTML: 891 caracteres
+[2026-02-06 10:11:02] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:11:02] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 10:11:02] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:11:02] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 10:11:05] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 15:30:04] Página principal cargada (editor.html)
+[2026-02-06 15:30:05] Página principal cargada (editor.html)
+[2026-02-06 15:31:01] Petición /guardar recibida
+[2026-02-06 15:31:01] Datos recibidos → Título: Chat con N2, Tamaño HTML: 906 caracteres
+[2026-02-06 15:31:01] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 15:31:01] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 15:31:02] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 15:31:02] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\Chat con N2.docx
+[2026-02-06 15:31:09] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 15:47:20] Página principal cargada (editor.html)
+[2026-02-06 15:47:21] Página principal cargada (editor.html)
+[2026-02-06 15:57:42] Petición /guardar recibida
+[2026-02-06 15:57:42] Datos recibidos → Título: z_Excel Preguntas - Plantilla, Tamaño HTML: 6056 caracteres
+[2026-02-06 15:57:42] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 15:57:42] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 15:57:43] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Preguntas - Plantilla.docx
+[2026-02-06 15:57:43] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Preguntas - Plantilla.docx
+[2026-02-06 16:00:51] Petición /guardar recibida
+[2026-02-06 16:00:51] Datos recibidos → Título: z_Excel Pregun_Plantilla, Tamaño HTML: 4442 caracteres
+[2026-02-06 16:00:51] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:00:51] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:00:51] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla.docx
+[2026-02-06 16:00:51] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla.docx
+[2026-02-06 16:01:53] Solicitud de cierre recibida (/cerrar)
+[2026-02-06 16:01:57] Página principal cargada (editor.html)
+[2026-02-06 16:01:58] Página principal cargada (editor.html)
+[2026-02-06 16:03:20] Petición /guardar recibida
+[2026-02-06 16:03:20] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 4411 caracteres
+[2026-02-06 16:03:20] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:03:20] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:03:21] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:03:21] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:05:23] Petición /guardar recibida
+[2026-02-06 16:05:23] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 4465 caracteres
+[2026-02-06 16:05:23] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:05:23] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:05:24] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:05:24] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:06:43] Petición /guardar recibida
+[2026-02-06 16:06:43] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3399 caracteres
+[2026-02-06 16:06:43] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:06:44] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:06:45] Petición /guardar recibida
+[2026-02-06 16:06:45] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3399 caracteres
+[2026-02-06 16:06:45] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:06:45] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:06:46] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:06:46] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:06:47] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:06:47] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:02] Petición /guardar recibida
+[2026-02-06 16:07:02] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3405 caracteres
+[2026-02-06 16:07:02] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:02] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:02] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:02] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:23] Petición /guardar recibida
+[2026-02-06 16:07:23] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3490 caracteres
+[2026-02-06 16:07:23] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:23] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:24] Petición /guardar recibida
+[2026-02-06 16:07:24] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3490 caracteres
+[2026-02-06 16:07:24] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:24] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:07:24] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:24] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:25] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:07:25] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:08:03] Petición /guardar recibida
+[2026-02-06 16:08:03] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 3452 caracteres
+[2026-02-06 16:08:03] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:08:03] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:08:04] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:08:04] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:10:32] Petición /guardar recibida
+[2026-02-06 16:10:32] Datos recibidos → Título: z_Excel Pregun_Plantilla2, Tamaño HTML: 2537 caracteres
+[2026-02-06 16:10:32] HTML temporal guardado en: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:10:32] Iniciando conversión HTML→DOCX desde C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Editor\ajustes\temp\content_temp.html
+[2026-02-06 16:10:33] Conversión completada correctamente → C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:10:33] DOCX generado exitosamente: C:\Users\ujfmaa\OneDrive - Grupo Planeta\Escritorio\Plantillas_Macro\Plantillas\z_Excel Pregun_Plantilla2.docx
+[2026-02-06 16:14:41] Solicitud de cierre recibida (/cerrar)

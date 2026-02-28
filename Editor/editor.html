@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Editor de plantillas</title>
+<script src="https://cdn.jsdelivr.net/npm/tinymce@7.2.1/tinymce.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style>
+body { font-family: Arial; margin: 20px; }
+input, button { margin-bottom: 10px; }
+button { padding: 10px; background:#0078d7; color:white; border:none; border-radius:5px; cursor:pointer; }
+button:hover { background:#005fa3; }
+#msg { margin-top: 10px; font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>Editor de plantillas</h2>
+<label>Título:</label><br>
+<input type="text" id="titulo" placeholder="Introduce un título"><br>
+<textarea id="editor"></textarea><br>
+<button onclick="guardar()">💾 Guardar</button>
+<button onclick="cerrarTodo()">❌ Cerrar</button>
+<p id="msg"></p>
+
+<script>
+tinymce.init({
+  selector: '#editor',
+  height: 500,
+  license_key: 'gpl',
+  plugins: 'lists link image table',
+  toolbar: 'undo redo | bold italic underline | bullist numlist | link image table',
+  menubar: false
+});
+
+function guardar() {
+  const titulo = document.getElementById("titulo").value.trim();
+  if (!titulo) return alert("Debes introducir un título.");
+  const contenido = tinymce.get("editor").getContent();
+
+  axios.post("/guardar", { html: contenido, titulo: titulo })
+    .then(res => document.getElementById("msg").innerText = res.data.msg)
+    .catch(err => {
+      console.error(err);
+      document.getElementById("msg").innerText = "⚠ Error al guardar (ver log.txt)";
+    });
+}
+
+function cerrarTodo() {
+  axios.post("/cerrar").then(() => window.close());
+}
+</script>
+</body>
+</html>
