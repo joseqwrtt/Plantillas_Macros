@@ -1,5 +1,3 @@
-Perfecto, aquí tienes un **FAQ completo y organizado** que explica todo el flujo desde `CopiarPlantillasWord_ODT_2.0.py` hasta el editor de plantillas:
-
 ---
 
 ## **FAQ – Flujo de Plantillas y Editor**
@@ -154,4 +152,5 @@ Al abrir el editor desde el botón, se ejecuta como proceso independiente: puede
 Todos los cambios en el editor se guardan directamente en Plantillas/, sin modificar plantillas existentes a menos que lo sobrescribas.
 
 El log (log.txt) se actualiza en tiempo real, útil para depuración o si el proceso se interrumpe.
+
 
