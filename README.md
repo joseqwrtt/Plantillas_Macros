@@ -20,7 +20,7 @@ Sin copiar, sin abrir archivos, sin interrumpir tu flujo de trabajo.
 
 1. Ve a la sección [**Releases**](https://github.com/joseqwrtt/update_app/releases/latest)
 2. Descarga el archivo `PlantillasMacro.exe`
-   [**Download/Descargar**](https://github.com/joseqwrtt/update_app/releases/download/3.0.0.10/PlantillasMacro.exe)
+   [**Download/Descargar**](https://github.com/joseqwrtt/update_app/releases/download/3.0.0.9/PlantillasMacro.exe)
 3. Ejecútalo — no requiere instalación
 
 > **Requisitos:** Windows 10 o superior · 64 bits
