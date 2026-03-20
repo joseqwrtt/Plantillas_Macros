@@ -47,6 +47,12 @@ Plantillas Macro tiene una **versión gratuita limitada** y una **licencia de pa
 
 <br>
 
+<div align="center">
+  <img width="600" alt="Comparativa versiones" src="https://github.com/user-attachments/assets/8169eb01-7d3c-4e6b-bcdf-2b9c00d6984b" />
+</div>
+
+<br>
+
 | Función | Versión Gratuita (limitada) | Versión Completa (9,9€) |
 |---------|:---------------------------:|:-----------------------:|
 | **Plantillas DOCX** | 11 | ♾️ Ilimitadas |
