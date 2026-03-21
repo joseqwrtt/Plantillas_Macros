@@ -6,6 +6,15 @@ Plantillas Macro es una pequeña aplicación para Windows que vive en segundo pl
 
 ---
 
+## 🌐 Web oficial
+
+[![Web](https://img.shields.io/badge/🌐_Visitar_web-joseqwrtt.github.io-6366f1?style=for-the-badge)](https://joseqwrtt.github.io)
+
+Más información, precios y descarga en la web oficial:  
+👉 **[https://joseqwrtt.github.io](https://joseqwrtt.github.io)**
+
+---
+
 ## ✨ ¿Cómo funciona?
 
 1. Guarda tus plantillas en la carpeta asignada
@@ -31,13 +40,19 @@ La aplicación se actualiza automáticamente cuando hay una nueva versión dispo
 
 ## 💳 Licencia
 
-Plantillas Macro tiene una **versión gratuita limitada** y una **licencia de pago (9,9€)** que desbloquea todas las funciones.
+Plantillas Macro tiene una **versión gratuita limitada** y **tres opciones de pago**:
+
+| Plan | Precio | Período |
+|------|--------|---------|
+| **Mensual** | 3,9€ | 1 mes |
+| **Trimestral** | 9,9€ | 3 meses |
+| **Anual** | 35€ | 12 meses |
 
 <br>
 
 <div align="center">
   <a href="https://srjosef9.lemonsqueezy.com/checkout/buy/74f21431-b9fe-4633-8b5a-2c58dae0f328?logo=0&discount=0" target="_blank">
-    <img src="https://img.shields.io/badge/🛒_Comprar_licencia-9,9€-3b82f6?style=for-the-badge&logo=lemonsqueezy&logoColor=white" alt="Comprar licencia por 9,9€">
+    <img src="https://img.shields.io/badge/🛒_Comprar_licencia-Desde_3,9€-3b82f6?style=for-the-badge&logo=lemonsqueezy&logoColor=white" alt="Comprar licencia">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/joseqwrtt/update_app/releases/latest" target="_blank">
@@ -53,8 +68,8 @@ Plantillas Macro tiene una **versión gratuita limitada** y una **licencia de pa
 
 <br>
 
-| Función | Versión Gratuita (limitada) | Versión Completa (9,9€) |
-|---------|:---------------------------:|:-----------------------:|
+| Función | Versión Gratuita (limitada) | Versión Completa |
+|---------|:---------------------------:|:----------------:|
 | **Plantillas DOCX** | 11 | ♾️ Ilimitadas |
 | **Plantillas ODT** | 11 | ♾️ Ilimitadas |
 | **Plantillas TXT** | 5 | ♾️ Ilimitadas |
@@ -68,7 +83,7 @@ Plantillas Macro tiene una **versión gratuita limitada** y una **licencia de pa
 
 <br>
 
-> 🎁 **Prueba completa 14 días**
+> 🎁 **Prueba completa 14 días** — Descarga la versión gratuita y prueba todas las funciones sin límite durante 14 días.
 
 ---
 
