@@ -68,7 +68,7 @@ Plantillas Macro tiene una **versión gratuita limitada** y una **licencia de pa
 
 <br>
 
-> 🎁 **Prueba completa 14 días** — Al comprar, tienes 14 días para probar todas las funciones. Si no te convence, solicita reembolso sin compromiso.
+> 🎁 **Prueba completa 14 días**
 
 ---
 
